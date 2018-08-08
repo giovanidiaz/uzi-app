@@ -45,31 +45,32 @@ export class DataProvider {
                 name: 'Laberinto',
                 action: 'Salir laberinto',
                 type: 'demo'
-            },
-            {
-                id: '4',
-                name: 'Buzzer',
-                action: 'Demo buzzer',
-                type: 'demo'
-            },
-            {
-                id: '5',
-                name: 'RGB',
-                action: 'Demo RGBs',
-                type: 'demo'
-            },
-            {
-                id: '6',
-                name: 'UltraSonico',
-                action: 'Demo Ultrasónico',
-                type: 'demo'
-            },
-            {
-                id: '7',
-                name: 'QRES',
-                action: 'Demo QRES',
-                type: 'demo'
             }
+            // ,
+            // {
+            //     id: '4',
+            //     name: 'Buzzer',
+            //     action: 'Demo buzzer',
+            //     type: 'demo'
+            // },
+            // {
+            //     id: '5',
+            //     name: 'RGB',
+            //     action: 'Demo RGBs',
+            //     type: 'demo'
+            // },
+            // {
+            //     id: '6',
+            //     name: 'UltraSonico',
+            //     action: 'Demo Ultrasónico',
+            //     type: 'demo'
+            // },
+            // {
+            //     id: '7',
+            //     name: 'QRES',
+            //     action: 'Demo QRES',
+            //     type: 'demo'
+            // }
         ]
     };
 
@@ -121,31 +122,32 @@ export class DataProvider {
                         name: 'Laberinto',
                         action: 'Salir laberinto',
                         type: 'demo'
-                    },
-                    {
-                        id: 'S',
-                        name: 'Buzzer',
-                        action: 'Demo buzzer',
-                        type: 'demo'
-                    },
-                    {
-                        id: 'S',
-                        name: 'RGB',
-                        action: 'Demo RGBs',
-                        type: 'demo'
-                    },
-                    {
-                        id: 'S',
-                        name: 'UltraSonico',
-                        action: 'Demo Ultrasónico',
-                        type: 'demo'
-                    },
-                    {
-                        id: 'S',
-                        name: 'QRES',
-                        action: 'Demo QRES',
-                        type: 'demo'
                     }
+                    // ,
+                    // {
+                    //     id: 'S',
+                    //     name: 'Buzzer',
+                    //     action: 'Demo buzzer',
+                    //     type: 'demo'
+                    // },
+                    // {
+                    //     id: 'S',
+                    //     name: 'RGB',
+                    //     action: 'Demo RGBs',
+                    //     type: 'demo'
+                    // },
+                    // {
+                    //     id: 'S',
+                    //     name: 'UltraSonico',
+                    //     action: 'Demo Ultrasónico',
+                    //     type: 'demo'
+                    // },
+                    // {
+                    //     id: 'S',
+                    //     name: 'QRES',
+                    //     action: 'Demo QRES',
+                    //     type: 'demo'
+                    // }
                 ]
             }
 

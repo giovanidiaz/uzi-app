@@ -1,0 +1,53 @@
+page-connect {
+    .trx-module-option {
+        display: block;
+        margin:  1px auto;
+        color: #111;
+        background-color: #F8F8F8;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-weight: 300;
+
+        > * {
+            vertical-align: middle;
+        }
+    
+        .trx-module-icon {
+          font-size: 3rem;
+          width: 3rem;
+          text-align: center;
+          margin-right: 1rem;
+          display: inline-block;
+        }
+
+        .trx-connect-button {
+            font-size: 1.2rem;
+            float: right;
+            line-height: 3.5rem;
+            color: #ccc;
+            margin-right: -1rem;
+        }
+      }
+    
+      .trx-module-option.activated {
+        background-color: color($colors, primary);
+        color: #ffffff;
+      }
+
+      .scroll-content {
+
+        background: url(../assets/imgs/pages-bg.png);
+        background-size: cover;
+      }
+
+      .trx-text-intro {
+        font-size: 2rem; font-weight: 300; text-align: center; padding: 1rem 0 2rem;
+      }
+
+      .trx-scan-status {
+        font-size: 1.25rem; color: #999; font-weight: 300;
+
+      }
+
+}

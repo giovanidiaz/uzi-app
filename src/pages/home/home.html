@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <img src="./assets/imgs/logo.png" style="height: 32px;"/>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <a class="trx-module-option" [navPush]="controlPage">
+                    <div>
+                    <div class="trx-module-icon">
+                        <i class="flaticon-play-button"></i>
+                    </div>
+                    <span class="trx-module-title">Control</span>
+                    </div>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a class="trx-module-option">
+                    <div class="trx-module-icon">
+                        <i class="flaticon-wifi"></i>
+                    </div>
+                    <span class="trx-module-title">Sensores</span>
+                </a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <a class="trx-module-option">
+                    <div class="trx-module-icon">
+                        <i class="flaticon-dashboard"></i>
+                    </div>
+                    <span class="trx-module-title">Configuraciones</span>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a class="trx-module-option">
+                    <div class="trx-module-icon">
+                        <i class="flaticon-order"></i>
+                    </div>
+                    <span class="trx-module-title">Demos</span>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

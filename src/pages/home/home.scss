@@ -1,0 +1,23 @@
+page-home {
+
+  .trx-module-option {
+    display: block;
+    margin: auto;
+    color: #111;
+    text-align: center;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding: 2rem 0;
+
+    .trx-module-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .trx-module-option.activated {
+    background-color: #00c6fe;
+    color: #ffffff;
+  }
+}

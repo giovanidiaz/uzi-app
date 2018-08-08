@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Conectar
+    </ion-title>
+    <ion-buttons end>
+      <ion-spinner color="light" *ngIf="btScanning === true"></ion-spinner>
+      <button ion-button icon-only (click)="scanDevices();" *ngIf="btScanning !== true">
+        <ion-icon color="light" name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <!--ion-refresher (ionRefresh)="scanDevices($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher-->
+  <div style="padding: 1rem;">
+    <p class="trx-text-intro">Seleccione un dispositivo UZI a continuación para conectarse</p>
+  </div>
+
+  <ion-card>
+    <ion-card-content>
+
+      <ng-container *ngIf="knownDevices.length > 0">
+
+        <h2>Dispositivos conocidos</h2>
+        <a *ngFor="let device of knownDevices" (click)="connectToDevice(device.id)" class="trx-module-option">
+          <div class="trx-module-icon">
+            <i class="flaticon-play-button"></i>
+          </div>
+          {{device.name}}
+          <div class="trx-connect-button" *ngIf="btScanning === false">
+            <ng-container *ngIf="getAvailableDevice(device.id); else deviceNotAvailable">
+              <span *ngIf="connectingToDevice === null">conectar</span>
+              <span *ngIf="connectingToDevice === device.id">conectando...</span>
+            </ng-container>
+            <ng-template #deviceNotAvailable>
+              <span>no disponible</span>
+            </ng-template>
+          </div>
+          <div class="trx-connect-button" *ngIf="btScanning === true">
+            <span>Buscando...</span>
+          </div>
+        </a>
+
+      </ng-container>
+
+      <h2 style="margin-top: 15px;">Dispositivos disponibles</h2>
+      <div class="trx-scan-status" *ngIf="btScanning === true">Buscando...</div>
+      <div class="trx-scan-status" *ngIf="btScanning === false && availableDevices && availableDevices.length === 0">No hay dispositivos disponibles</div>
+      <a *ngFor="let device of availableDevices" (click)="connectToDevice(device.id)" class="trx-module-option">
+        <div class="trx-module-icon">
+          ?
+        </div>
+        {{device.name}}
+
+        <div class="trx-connect-button">
+          <span *ngIf="connectingToDevice === null">conectar</span>
+          <span *ngIf="connectingToDevice === device.id">conectando...</span>
+        </div>
+      </a>
+      <br>
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>
